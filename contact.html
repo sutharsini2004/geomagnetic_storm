@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Northern_Lights_From_Over_the_North_Pole_%28NESDIS_2024-05-15_nhem-aurora-labels%29.png/250px-Northern_Lights_From_Over_the_North_Pole_%28NESDIS_2024-05-15_nhem-aurora-labels%29.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #003366; /* Dark blue color */
+            font-family: 'Roboto', sans-serif; /* Modern font */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #b0b0b0; /* Ash color */
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #8a8a8a; /* Slightly darker shade on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+            max-width: 600px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #0099ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #007acc;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Get in Touch</h2>
+        <p>We would love to hear from you! Please fill out the form below to contact us with any questions or feedback.</p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+    </body>
+</html>

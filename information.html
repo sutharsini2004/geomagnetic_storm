@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geomagnetic Storms Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Northern_Lights_From_Over_the_North_Pole_%28NESDIS_2024-05-15_nhem-aurora-labels%29.png/250px-Northern_Lights_From_Over_the_North_Pole_%28NESDIS_2024-05-15_nhem-aurora-labels%29.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            height: 100px;
+        }
+
+        header .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #003366; /* Dark blue color */
+            font-family: 'Roboto', sans-serif; /* Modern font */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px;
+            background-color: #b0b0b0; /* Ash color */
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #8a8a8a; /* Slightly darker shade on hover */
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .slide-container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide {
+            display: none;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .slide img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .navigation {
+            margin-top: 20px;
+        }
+
+        .navigation button {
+            padding: 10px 20px;
+            background-color: #0099ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation button:hover {
+            background-color: #007acc;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Geomagnetic Storms Information</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="information.html">Information</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="slide-container">
+            <div class="slide active">
+                <h2>Introduction to Geomagnetic Storms</h2>
+                <img src="https://www.shutterstock.com/image-photo/earths-magnetic-field-creative-earth-260nw-2503248955.jpg" alt="Geomagnetic Storms">
+                <p>Geomagnetic storms are disturbances in Earth's magnetosphere caused by solar wind and solar flares. They can impact technology and the environment.</p>
+            </div>
+            <div class="slide">
+                <h2>What Causes Geomagnetic Storms?</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCQeY3FE-1I2xJAgxM9LyWMXQ4jcmb-eyvsRmRbzXjGsyGYeSCYQ-IKWjsybiVYd_KZxg&usqp=CAU" alt="Solar Wind">
+                <p>Solar wind carrying charged particles from the Sun can interact with Earth's magnetic field, causing geomagnetic storms. These interactions can create disruptions in the magnetosphere, leading to increased auroral activity and potential impacts on technology.</p>
+            </div>
+            <div class="slide">
+                <h2>May 2024 Geomagnetic Storms Overview</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRsaGQrcvfPauYAPboIg-rNfvF3UjhRk3D4A&s" alt="May 2024 Storm">
+                <p>In May 2024, a series of significant geomagnetic storms were recorded, caused by a massive coronal mass ejection (CME) from the Sun. These storms were among the most intense in recent years, affecting satellite communications and power grids worldwide.</p>
+            </div>
+            <div class="slide">
+                <h2>Impact on Communication Systems</h2>
+                <img src="https://scitechdaily.com/images/Geomagnetic-Storm-Satellite-Communications-Art-Concept.jpg" alt="Communication Systems">
+                <p>The geomagnetic storms in May 2024 led to temporary outages and degradation of communication systems. Many satellites experienced disruptions in their signals, affecting GPS accuracy and satellite-based communication services.</p>
+            </div>
+            <div class="slide">
+                <h2>Effects on Power Grids</h2>
+                <img src="https://static.toiimg.com/thumb/msid-110490080,imgsize-88682,width-400,resizemode-4/110490080.jpg" alt="Power Grid">
+                <p>The storms caused geomagnetically induced currents (GICs) in power grids, leading to transformer malfunctions and localized power outages. Power companies had to implement emergency protocols to prevent major grid failures.</p>
+            </div>
+            <div class="slide">
+                <h2>Impact on Space Missions</h2>
+                <img src="https://www.cbs17.com/wp-content/uploads/sites/29/2024/05/tonights_static_viewline_forecast-1.jpg?w=648" alt="Space Missions">
+                <p>Space missions were affected as astronauts aboard the International Space Station (ISS) experienced increased radiation levels. Space agencies had to take precautions to ensure the safety of their crew and protect sensitive equipment.</p>
+            </div>
+            <div class="slide">
+                <h2>Public Awareness and Safety Measures</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPVKHNP6zFeKoxxCSOeh1OmDLprjMW_lzTYg&s" alt="Public Awareness">
+                <p>Following the storms, there was a significant push for public awareness regarding the impacts of geomagnetic storms. Safety measures included improving satellite shielding and updating protocols for power grid protection.</p>
+            </div>
+            <div class="slide">
+                <h2>Future Predictions and Research</h2>
+                <img src="https://scitechdaily.com/images/Space-Weather-Effects-1-scaled.jpg" alt="Future Predictions">
+                <p>Ongoing research aims to better predict geomagnetic storms and mitigate their impacts. Advanced models and space weather forecasting tools are being developed to enhance our preparedness for future geomagnetic events.</p>
+            </div>
+            <div class="navigation">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </section>
+    </main>
+        <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+        }
+
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        // Show the first slide initially
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
